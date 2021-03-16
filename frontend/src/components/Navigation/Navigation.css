@@ -1,0 +1,57 @@
+.navbar {
+  background-color: transparent;
+  display: flex;
+  padding: 15px 20px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.navbar-title {
+  font-size: 35px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(to right, rgb(255, 84, 84), rgb(255, 186, 59), rgb(255, 255, 99), rgb(81, 182, 81), rgb(108, 108, 255), rgb(190, 63, 190));
+  background-size: 200% 200%;
+  animation: rainbow 1s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  transition: color .1s ease-in-out;
+  text-transform: uppercase;
+  font-weight:900;
+}
+
+.navbar-title:hover {
+  color:rgba(0,0,0,0);
+}
+
+@keyframes rainbow { 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+
+.navbar-title-container:hover {
+  color: rgb(225, 225, 225);
+}
+
+.navbar-link {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+

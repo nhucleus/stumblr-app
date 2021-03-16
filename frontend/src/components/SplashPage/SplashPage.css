@@ -1,0 +1,121 @@
+.splash-container {
+	display: flex;
+  justify-content: center;
+	flex-direction: column;
+	background-image: url("./splash-background.gif");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.splash-content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	transform: translate(0%, -15%);
+	animation: fade 1.2s, slide 0.5s;
+}
+
+.splash-links {
+  padding-top: 25px;
+  display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+@keyframes fade{
+	from{
+		opacity:0;
+	} 
+	to{
+		opacity:1;
+	}
+}
+
+@keyframes slide{
+	from{
+		transform: translateY(-20px);
+	} 
+	to{
+		transform: translateY(-45px);
+	}
+}
+
+.splash-title {
+	color: rgb(121, 137, 190);
+	font-size: 60px;
+	margin: 0;
+	font-family: 'Bevan', cursive;
+}
+
+.splash-slogan {
+	color: rgb(121, 137, 190);
+	text-align: center;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.auth-btn {
+	background-color: rgb(69, 104, 182);
+	color: whitesmoke;
+	border-radius: 3px;
+	border: none;
+	width: 300px;
+	height: 45px;
+	padding: 8px 0px;
+	margin-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-btn:hover {
+  background-color: rgb(100, 130, 197);
+}
+
+.login-btn {
+	background-color: rgb(248, 248, 248);
+	font-weight: bold;
+	border-radius: 3px;
+	border: none;
+	width: 300px;
+	height: 45px;
+	padding: 8px 0px;
+	margin-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: rgb(238, 237, 237);
+}
+
+.errors {
+	background-color: rgba(0,0,0,0.2);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: whitesmoke;
+	border-radius: 3px;
+	border: none;
+	width: 280px;
+	padding: 10px;
+	height: 24px;
+	text-align: center;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	animation: error-popup 0.2s;
+}
+
+@keyframes error-popup {
+	from {
+		height: 0px;
+	}
+	to {
+		height: 24px;
+	}
+}
